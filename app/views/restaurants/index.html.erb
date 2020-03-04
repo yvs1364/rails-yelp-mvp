@@ -1,6 +1,9 @@
+<div class="container p-3 my-3">
 <h1>All Restaurants</h1>
-<% @restaurants.each do |restaurant| %>
-<h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
-<p><%= restaurant.address %></p>
-<% end %>
-
+</div>
+  <div class="container-fluid">
+      <% @restaurants.each do |restaurant| %>
+      <h2><%= link_to restaurant.name, restaurant_path(restaurant) %></h2>
+      <p><%= restaurant.address %></p>
+      <% end %>
+  </div>
